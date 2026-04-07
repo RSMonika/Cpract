@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "d24162f7-b135-43b2-9066-4affa445e4a5",
+		"name": "Global Usage Collection Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27892076",
+		"_collection_link": "https://martian-desert-875940.postman.co/workspace/SDET-with-Jatin~e6c255c7-a3d6-442c-8679-8b61dc4e69be/collection/27892076-d24162f7-b135-43b2-9066-4affa445e4a5?action=share&source=collection_link&creator=27892076"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"console.log(pm.globals.get(\"DEMO-KEY\"))"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.google.com",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
